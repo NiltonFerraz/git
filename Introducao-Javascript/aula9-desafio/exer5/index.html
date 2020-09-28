@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        //exer5
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        function mostraHabilidades() {
+            for (const value of usuarios) {
+                console.log("O " + usuarios[0].nome + " possui as habilidades: " + usuarios[0].habilidades.join(", ") + "\n" + "O " + usuarios[1].nome + " possui as habilidades: " + usuarios[1].habilidades.join(", "));
+            }
+        }
+        
+        mostraHabilidades();
+
+    </script>
+</body>
+</html>

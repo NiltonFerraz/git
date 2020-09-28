@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome" />
+        <!-- <input type="text" name="nome" id="nome2" />  -->
+        <button class="botao"> Adicionar</button>
+    </div>
+    
+    <script>
+        //document referencia a dom, toda a arvore do html
+        // var inputElement = document.getElementById('nome');
+
+        //irá buscar o elemento input da div acima, na posição 0 pois só há um input
+        //var inputElement = document.getElementsByTagName('input')[0];
+        
+        //irá buscar todos os inputs
+        //var inputElement = document.getElementsByTagName('input');
+        
+        //procura pela class no input acima
+        //var inputElement = document.getElementsByClassName('nome');
+
+        //o melhor, mais usado
+        //var inputElement = document.querySelector('div#app input');
+
+        //retorna o elemento com o name=nome
+        //var inputElement = document.querySelector('input[name=nome]');
+
+        //busca todos os elementos input
+        //var inputElement = document.querySelectorAll('input');
+        //console.log(inputElement);
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+
+            alert(text);
+        }
+            
+    </script>
+</body>
+</html>
