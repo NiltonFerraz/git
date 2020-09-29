@@ -1,1 +1,1 @@
-# git
+# Curso Javascript Rocketseat
